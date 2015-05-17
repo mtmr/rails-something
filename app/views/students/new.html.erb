@@ -1,0 +1,27 @@
+<h1> New Student Registration </h1>
+<!-- TODO: MAke it less ugly -->
+<%= form_for :students, url: students_path do |f| %>
+        <p>
+        <%= f.label :Name %><br>
+        <%= f.text_field :Name %>
+        </p>
+        <p>
+	<!--Roll Number -->
+        <%= f.label :Roll %><br>
+        <%= f.number_field :Roll %>
+        </p>
+        <p>
+	<!--Wretched marks -->
+        <%= f.label :Mark1 %><br>
+        <%= f.number_field :Mark1 %>
+        </p>
+        <p>
+	<!--Marks 2 -->
+        <%= f.label :Mark2 %><br>
+        <%= f.number_field :Mark2 %>
+        </p>
+        <p>
+        <%= f.submit %>
+        </p>
+<% end %>
+
